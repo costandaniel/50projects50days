@@ -20,12 +20,13 @@ body {
 }
 
 .panel {
-    background-size: auto 100%;
+
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 25px;
-    color: white;
+    color: crimson;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
@@ -34,10 +35,12 @@ body {
 }
 
 .panel h3 {
-    font-size: 30px;
+
+    font-size: 50px;
+    font-style: italic;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 100px;
     margin: 0;
     opacity: 0;
 }
@@ -48,6 +51,7 @@ body {
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width:500px) {
